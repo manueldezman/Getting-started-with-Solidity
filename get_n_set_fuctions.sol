@@ -4,13 +4,13 @@ pragma solidity 0.8.7;
 contract var_types {
 
     //Variable definitions
-    int positive_value;
-    uint negative_value;
+    uint positive_value;
+    int negative_value;
     bool booln_value;
     address my_address;
 
 // set the the value for positive integer 
-function set_pos(int positive_value) public {
+function set_pos(uint positive_value) public {
     positive_value = 5;
 }
 // return the value of the posiitve integer
@@ -19,7 +19,7 @@ function get_pos() public view {
 }
 
 // set the the value for negative integer 
-function set_neg(uint negative_value) public {
+function set_neg(int negative_value) public {
     negative_value = -5;
 }
 // return the value of the negative integer
